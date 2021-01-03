@@ -1,0 +1,78 @@
+https://www.hostinger.com.ar/tutoriales/comandos-de-git
+
+1ERO hay que decirle a git quienes somos con el siguiente comando:
+
+*git config --global user.name "nombredeusuario"+enter
+
+y luego ingreso con email con el siguiente comado:
+
+*git config --global user.email "email@x.com"+enter
+
+*git config --global -l(podemos ver los valores establecidos o sea quien va a usar git)
+-------------------------------------------------------
+
+proyecto=repositorio
+
+*git init solo una vez por repositorio cuando queremos vincular el proyecto con git
+
+*git status -s muestra archivos modificados
+
+*git log --oneline (muestra los commits realizados)
+
+*git reset --hard y a continuacion el id del commit que quiero ir(es para volver a un commmit)
+
+*git remote rm origin(para cambiar de repositorio)+ enter y despues se agrega el git remote add origin linkrepositoriogit
+
+*git pull bajar los cambios, traes la actualizacion al repo local
+
+*git tag version1.o -m"version1.0"
+*git log --oneline
+*git push --tag
+*git tag -d nombredeltag (para borrar el tag creado)
+*git show nombretag (para mostrar que es lo que contiene el tag)
+
+*git branch nombrerama(creo la rama)
+*git chekout nombrerama(me muevo/posiciono en esa rama)
+*git branch(para ver las ramas que hay o existen en el repo)
+*git log --oneline(veo los commits de las ramas)
+
+*MERGE
+para hacer el merge nos tenemos que posicionar
+en la rama master
+*git checkout master(me posiciono en master)
+*gitbranch(verifico que este parada ahi)
+*git merge nombrerama(pongo el nombre de la rama que yo quiero unir con la master)
+*git log --oneline(veo que que aun existe esa rama que uni)
+*git branch -d nombrerama(borro la rama con la q hice merge)
+*git log --oneline(verifico que esa rama no este)
+
+-----------
+*git diff = se puede saber cuales fueron los cambios realizados en el codigo
+*git checkout . = pare revertir los cambios del commit anterior
+*git log = para ver la lista de cambios realizados(presionando la letra q salis de ese historial)
+*git add js/ = para agregar archivo a un directorio/carpeta
+*git add css/*.css=para decirle que solo agrega archivos que terminen con las extension
+*git reset css/*.scss ó git reset index.html= para sacar algo que agregue por equivocacion(para hacer esto todavia no tiene q estar subido al repo)
+*git commit --amend -m "nuevo mensaje"=para modificar el commit que realize recientemente
+*git mv index.html i.html = para modificar el nombre de un archivo
+*git rm nombrearchivo+extension +enter = para eliminar archivo
+*git reset --hard + el id del commit=para recuperar archivo
+*git reflog = para ver historial al haber utilizado rest --hard
+*git checkout -b nombrerama = para crear la rama y a la vez moverme en esa
+--------------------
+HELP
+
+*git help +comando ej: git help commit = te dice paso a paso para que sirve
+-------
+ALIAS
+
+*git config --global alias.l "log" = para ponerle alias a los comandos
+--------------------------------------------
+GIT IGNORE
+
+se crea un archivo llamado .gitignore(con extension gitignore y si el sistema de la compu no
+deja guardar ese archivo sin nombre le ponemos un nombre y luego la extenxion gitignore) y 
+ahi adentro de pone carpetas o nombre de los archivos que queramos ignorar a la hora de agregar
+ (add) o comitear
+-----------------------
+Fork = copia repositorio de un usuario asi yo puedo trabajar con eso y hacer mi version
