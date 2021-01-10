@@ -52,6 +52,7 @@ en la rama master
 *git log = para ver la lista de cambios realizados(presionando la letra q salis de ese historial)
 *git add js/ = para agregar archivo a un directorio/carpeta
 *git add css/*.css=para decirle que solo agrega archivos que terminen con las extension
+*git add --all folder/ = para agregar todos los archivos de una carpeta
 *git reset css/*.scss ó git reset index.html= para sacar algo que agregue por equivocacion(para hacer esto todavia no tiene q estar subido al repo)
 *git commit --amend -m "nuevo mensaje"=para modificar el commit que realize recientemente
 *git mv index.html i.html = para modificar el nombre de un archivo
